@@ -1,11 +1,12 @@
 Summary:	Janus library
 Summary(pl):	Biblioteka Janus
 Name:		janus
-Version:	0.4.2
+Version:	0.4.4.20020912
 Release:	1
 License:	LGPL
 Group:		Libraries
-Source0:	ftp://victor.worldforge.org/pub/worldforge/libs/janus/%{name}-%{version}.tar.gz
+#Source0:	ftp://victor.worldforge.org/pub/worldforge/libs/janus/%{name}-%{version}.tar.gz
+Source0:	%{name}-20020912.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -109,14 +110,9 @@ This package contains the static Janus libraries.
 Ten pakiet zawiera statyczne biblioteki Janus.
 
 %prep
-%setup -q
+%setup -q -n %{name}-0.4.5
 
 %build
-aclocal
-autoheader
-libtoolize --automake --copy --force
-automake --add-missing --copy --gnu --force
-%{__autoconf}
 %configure \
 	--enable-static
 %{__make}
@@ -158,6 +154,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/janus-config
 %{_includedir}/janus
 %attr(755,root,root) %{_libdir}/lib*.la
+%{_aclocaldir}/janus.m4
 %{_libdir}/lib*.so
 
 %files static
