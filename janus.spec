@@ -116,7 +116,7 @@ aclocal
 autoheader
 libtoolize --automake --copy --force
 automake --add-missing --copy --gnu --force
-autoconf
+%{__autoconf}
 %configure \
 	--enable-static
 %{__make}
