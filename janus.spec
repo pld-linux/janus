@@ -5,13 +5,6 @@ Version:	0.4.2
 Release:	1
 License:	LGPL
 Group:		Libraries
-Group(de):	Libraries
-Group(es):	Bibliotecas
-Group(fr):	Librairies
-Group(pl):	Biblioteki
-Group(pt_BR):	Bibliotecas
-Group(ru):	Библиотеки
-Group(uk):	Б╕бл╕отеки
 Source0:	ftp://victor.worldforge.org/pub/worldforge/libs/janus/%{name}-%{version}.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -36,13 +29,6 @@ danych w stylu XML i mo©e byФ wykonane przez silnik dialogowy.
 Summary:	Janus library - libuta bindings
 Summary(pl):	Biblioteka Janus - interfejs do libuta
 Group:		Libraries
-Group(de):	Libraries
-Group(es):	Bibliotecas
-Group(fr):	Librairies
-Group(pl):	Biblioteki
-Group(pt_BR):	Bibliotecas
-Group(ru):	Библиотеки
-Group(uk):	Б╕бл╕отеки
 Requires:	%{name} = %{version}
 
 %description libuta
@@ -65,13 +51,6 @@ Ten pakiet zawiera interfejs do widgetСw libuta.
 Summary:	Janus library - gtk bindings
 Summary(pl):	Biblioteka Janus - interfejs do gtk
 Group:		Libraries
-Group(de):	Libraries
-Group(es):	Bibliotecas
-Group(fr):	Librairies
-Group(pl):	Biblioteki
-Group(pt_BR):	Bibliotecas
-Group(ru):	Библиотеки
-Group(uk):	Б╕бл╕отеки
 Requires:	%{name} = %{version}
 
 %description gtk
@@ -94,13 +73,6 @@ Ten pakiet zawiera interfejs do widgetСw gtk+.
 Summary:	Header files for janus development
 Summary(pl):	Pliki nagЁСwkowe do tworzenia programСw z u©yciem biblioteki Janus
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name}-gtk = %{version}
 Requires:	%{name}-libuta = %{version}
 Requires:	libuta-devel
@@ -123,13 +95,6 @@ z u©yciem biblioteki Janus.
 Summary:	Static libraries for janus development
 Summary(pl):	Statyczne biblioteki Janus
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name}-devel = %{version}
 
 %description static
