@@ -1,9 +1,17 @@
 Summary:	Janus library
+Summary(pl):	Biblioteka Janus
 Name:		janus
 Version:	0.4.2
 Release:	1
 License:	LGPL
 Group:		Libraries
+Group(de):	Libraries
+Group(es):	Bibliotecas
+Group(fr):	Librairies
+Group(pl):	Biblioteki
+Group(pt_BR):	Bibliotecas
+Group(ru):	âÉÂÌÉÏÔÅËÉ
+Group(uk):	â¦ÂÌ¦ÏÔÅËÉ
 Source0:	ftp://victor.worldforge.org/pub/worldforge/libs/janus/%{name}-%{version}.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -13,66 +21,127 @@ BuildRequires:	gtk+-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This library is a UI library which is independent from the used
-widget library.  The base libary provides an abstract instance
-of a UI; any dialog is described by a XML-stylish data structure
-and can be executed by the dialog engine. 
+This library is a UI library which is independent from the used widget
+library. The base libary provides an abstract instance of a UI; any
+dialog is described by a XML-stylish data structure and can be
+executed by the dialog engine.
+
+%description -l pl
+To jest biblioteka interfejsu u¿ytkownika niezale¿na od u¿ytej
+biblioteki widgetów. Podstawowa biblioteka daje abstrakcyjn± instancjê
+interfejsu; ka¿de okienko dialogowe jest opisane przez strukturê
+danych w stylu XML i mo¿e byæ wykonane przez silnik dialogowy.
 
 %package libuta
 Summary:	Janus library - libuta bindings
+Summary(pl):	Biblioteka Janus - interfejs do libuta
 Group:		Libraries
+Group(de):	Libraries
+Group(es):	Bibliotecas
+Group(fr):	Librairies
+Group(pl):	Biblioteki
+Group(pt_BR):	Bibliotecas
+Group(ru):	âÉÂÌÉÏÔÅËÉ
+Group(uk):	â¦ÂÌ¦ÏÔÅËÉ
 Requires:	%{name} = %{version}
 
 %description libuta
-This library is a UI library which is independent from the used
-widget library.  The base libary provides an abstract instance
-of a UI; any dialog is described by a XML-stylish data structure
-and can be executed by the dialog engine. 
+This library is a UI library which is independent from the used widget
+library. The base libary provides an abstract instance of a UI; any
+dialog is described by a XML-stylish data structure and can be
+executed by the dialog engine.
 
-This package contains bindings for libuta
+This package contains bindings for libuta.
+
+%description libuta -l pl
+To jest biblioteka interfejsu u¿ytkownika niezale¿na od u¿ytej
+biblioteki widgetów. Podstawowa biblioteka daje abstrakcyjn± instancjê
+interfejsu; ka¿de okienko dialogowe jest opisane przez strukturê
+danych w stylu XML i mo¿e byæ wykonane przez silnik dialogowy.
+
+Ten pakiet zawiera interfejs do widgetów libuta.
 
 %package gtk
 Summary:	Janus library - gtk bindings
+Summary(pl):	Biblioteka Janus - interfejs do gtk
 Group:		Libraries
+Group(de):	Libraries
+Group(es):	Bibliotecas
+Group(fr):	Librairies
+Group(pl):	Biblioteki
+Group(pt_BR):	Bibliotecas
+Group(ru):	âÉÂÌÉÏÔÅËÉ
+Group(uk):	â¦ÂÌ¦ÏÔÅËÉ
 Requires:	%{name} = %{version}
 
 %description gtk
-This library is a UI library which is independent from the used
-widget library.  The base libary provides an abstract instance
-of a UI; any dialog is described by a XML-stylish data structure
-and can be executed by the dialog engine. 
+This library is a UI library which is independent from the used widget
+library. The base libary provides an abstract instance of a UI; any
+dialog is described by a XML-stylish data structure and can be
+executed by the dialog engine.
 
 This package contains bindings for gtk library.
 
+%description gtk -l pl
+To jest biblioteka interfejsu u¿ytkownika niezale¿na od u¿ytej
+biblioteki widgetów. Podstawowa biblioteka daje abstrakcyjn± instancjê
+interfejsu; ka¿de okienko dialogowe jest opisane przez strukturê
+danych w stylu XML i mo¿e byæ wykonane przez silnik dialogowy.
+
+Ten pakiet zawiera interfejs do widgetów gtk+.
+
 %package devel
-Summary:	Header files and libraries for janus development
+Summary:	Header files for janus development
+Summary(pl):	Pliki nag³ówkowe do tworzenia programów z u¿yciem biblioteki Janus
 Group:		Development/Libraries
+Group(de):	Entwicklung/Libraries
+Group(es):	Desarrollo/Bibliotecas
+Group(fr):	Development/Librairies
+Group(pl):	Programowanie/Biblioteki
+Group(pt_BR):	Desenvolvimento/Bibliotecas
+Group(ru):	òÁÚÒÁÂÏÔËÁ/âÉÂÌÉÏÔÅËÉ
+Group(uk):	òÏÚÒÏÂËÁ/â¦ÂÌ¦ÏÔÅËÉ
 Requires:	%{name}-gtk = %{version}
 Requires:	%{name}-libuta = %{version}
 Requires:	libuta-devel
 Requires:	gtk+-devel
 
 %description devel
-This library is a UI library which is independent from the used
-widget library.  The base libary provides an abstract instance
-of a UI; any dialog is described by a XML-stylish data structure
-and can be executed by the dialog engine. 
+This library is a UI library which is independent from the used widget
+library. The base libary provides an abstract instance of a UI; any
+dialog is described by a XML-stylish data structure and can be
+executed by the dialog engine.
 
 This package contains the header files needed to develop programs that
 use these janus library.
 
+%description devel -l pl
+Ten pakiet zawiera pliki nag³ówkowe potrzebne przy tworzeniu programów
+z u¿yciem biblioteki Janus.
+
 %package static
 Summary:	Static libraries for janus development
+Summary(pl):	Statyczne biblioteki Janus
 Group:		Development/Libraries
+Group(de):	Entwicklung/Libraries
+Group(es):	Desarrollo/Bibliotecas
+Group(fr):	Development/Librairies
+Group(pl):	Programowanie/Biblioteki
+Group(pt_BR):	Desenvolvimento/Bibliotecas
+Group(ru):	òÁÚÒÁÂÏÔËÁ/âÉÂÌÉÏÔÅËÉ
+Group(uk):	òÏÚÒÏÂËÁ/â¦ÂÌ¦ÏÔÅËÉ
 Requires:	%{name}-devel = %{version}
 
 %description static
-This library is a UI library which is independent from the used
-widget library.  The base libary provides an abstract instance
-of a UI; any dialog is described by a XML-stylish data structure
-and can be executed by the dialog engine. 
+This library is a UI library which is independent from the used widget
+library. The base libary provides an abstract instance of a UI; any
+dialog is described by a XML-stylish data structure and can be
+executed by the dialog engine.
 
-This package contains the static libuta.
+This package contains the static Janus libraries.
+
+%description static -l pl
+Ten pakiet zawiera statyczne biblioteki Janus.
 
 %prep
 %setup -q
@@ -97,20 +166,26 @@ gzip -9nf AUTHORS ChangeLog README TODO
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%post	-p /sbin/ldconfig
+%postun	-p /sbin/ldconfig
+
+%post	libuta -p /sbin/ldconfig
+%postun	libuta -p /sbin/ldconfig
+
+%post	gtk -p /sbin/ldconfig
+%postun	gtk -p /sbin/ldconfig
+
 %files
 %defattr(644,root,root,755)
 %doc *.gz
-%{_libdir}/libjanus.so.0
 %attr(755,root,root) %{_libdir}/libjanus.so.*.*
 
 %files libuta
 %defattr(644,root,root,755)
-%{_libdir}/libjanus_libuta.so.0
 %attr(755,root,root) %{_libdir}/libjanus_libuta.so.*.*
 
 %files gtk
 %defattr(644,root,root,755)
-%{_libdir}/libjanus_gtk.so.0
 %attr(755,root,root) %{_libdir}/libjanus_gtk.so.*.*
 
 %files devel
