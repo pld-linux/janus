@@ -51,8 +51,8 @@ danych w stylu XML i mo¿e byæ wykonane przez silnik dialogowy.
 Ten pakiet zawiera interfejs do widgetów libuta.
 
 %package gtk
-Summary:	Janus library - gtk bindings
-Summary(pl):	Biblioteka Janus - interfejs do gtk
+Summary:	Janus library - GTK+ bindings
+Summary(pl):	Biblioteka Janus - interfejs do GTK+
 Group:		Libraries
 Requires:	%{name} = %{version}
 
@@ -62,7 +62,7 @@ library. The base libary provides an abstract instance of a UI; any
 dialog is described by a XML-stylish data structure and can be
 executed by the dialog engine.
 
-This package contains bindings for gtk library.
+This package contains bindings for GTK+ library.
 
 %description gtk -l pl
 To jest biblioteka interfejsu u¿ytkownika niezale¿na od u¿ytej
@@ -70,7 +70,7 @@ biblioteki widgetów. Podstawowa biblioteka daje abstrakcyjn± instancjê
 interfejsu; ka¿de okienko dialogowe jest opisane przez strukturê
 danych w stylu XML i mo¿e byæ wykonane przez silnik dialogowy.
 
-Ten pakiet zawiera interfejs do widgetów gtk+.
+Ten pakiet zawiera interfejs do widgetów GTK+.
 
 %package devel
 Summary:	Header files for janus development
