@@ -1,0 +1,20 @@
+--- bindings/libuta/widgetbase.h.orig	2003-11-02 20:47:37.000000000 +0000
++++ bindings/libuta/widgetbase.h	2003-11-02 20:47:08.000000000 +0000
+@@ -23,6 +23,7 @@
+ #ifndef _WIDGET_BASE_H_
+ #define _WIDGET_BASE_H_
+ 
++#include <assert.h>
+ #include "element_sigc.h"
+ #include <uta/widget.h>
+ #include <uta/font.h>
+--- bindings/gtk/pushbutton.h.orig	2002-01-21 11:13:43.000000000 +0000
++++ bindings/gtk/pushbutton.h	2003-11-02 21:17:41.000000000 +0000
+@@ -23,6 +23,7 @@
+ #ifndef _PUSHBUTTON_H_
+ #define _PUSHBUTTON_H_
+ 
++#include <assert.h>
+ #include "widgetbase.h"
+ namespace Janus {
+ 

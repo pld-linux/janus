@@ -8,6 +8,7 @@ Group:		Libraries
 #Source0:	ftp://victor.worldforge.org/pub/worldforge/libs/janus/%{name}-%{version}.tar.gz
 Source0:	%{name}-20020912.tar.gz
 # Source0-md5:	345762a0de41b2a9782dbbec6e609020
+Patch0:		%{name}-missing_assert_h.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -112,6 +113,7 @@ Ten pakiet zawiera statyczne biblioteki Janus.
 
 %prep
 %setup -q -n %{name}-0.4.5
+%patch0
 
 %build
 %configure \
