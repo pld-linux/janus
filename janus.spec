@@ -7,6 +7,7 @@ License:	LGPL
 Group:		Libraries
 #Source0:	ftp://victor.worldforge.org/pub/worldforge/libs/janus/%{name}-%{version}.tar.gz
 Source0:	%{name}-20020912.tar.gz
+# Source0-md5:	345762a0de41b2a9782dbbec6e609020
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
