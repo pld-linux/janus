@@ -153,7 +153,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/janus-config
 %{_includedir}/janus
-%attr(755,root,root) %{_libdir}/lib*.la
+%{_libdir}/lib*.la
 %{_aclocaldir}/janus.m4
 %{_libdir}/lib*.so
 
