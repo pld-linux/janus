@@ -11,9 +11,9 @@ Source0:	%{name}-20020912.tar.gz
 Patch0:		%{name}-missing_assert_h.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gtk+-devel
 BuildRequires:	libtool
 BuildRequires:	libuta-devel
-BuildRequires:	gtk+-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,7 +32,7 @@ danych w stylu XML i mo¿e byæ wykonane przez silnik dialogowy.
 Summary:	Janus library - libuta bindings
 Summary(pl):	Biblioteka Janus - interfejs do libuta
 Group:		Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description libuta
 This library is a UI library which is independent from the used widget
@@ -54,7 +54,7 @@ Ten pakiet zawiera interfejs do widgetów libuta.
 Summary:	Janus library - GTK+ bindings
 Summary(pl):	Biblioteka Janus - interfejs do GTK+
 Group:		Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description gtk
 This library is a UI library which is independent from the used widget
@@ -76,10 +76,10 @@ Ten pakiet zawiera interfejs do widgetów GTK+.
 Summary:	Header files for janus development
 Summary(pl):	Pliki nag³ówkowe do tworzenia programów z u¿yciem biblioteki Janus
 Group:		Development/Libraries
-Requires:	%{name}-gtk = %{version}
-Requires:	%{name}-libuta = %{version}
-Requires:	libuta-devel
+Requires:	%{name}-gtk = %{version}-%{release}
+Requires:	%{name}-libuta = %{version}-%{release}
 Requires:	gtk+-devel
+Requires:	libuta-devel
 
 %description devel
 This library is a UI library which is independent from the used widget
@@ -98,7 +98,7 @@ z u¿yciem biblioteki Janus.
 Summary:	Static libraries for janus development
 Summary(pl):	Statyczne biblioteki Janus
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 This library is a UI library which is independent from the used widget
@@ -123,7 +123,8 @@ Ten pakiet zawiera statyczne biblioteki Janus.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
