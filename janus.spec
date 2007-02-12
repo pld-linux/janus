@@ -1,5 +1,5 @@
 Summary:	Janus library
-Summary(pl):	Biblioteka Janus
+Summary(pl.UTF-8):   Biblioteka Janus
 Name:		janus
 Version:	0.4.4.20020912
 Release:	1
@@ -22,15 +22,15 @@ library. The base libary provides an abstract instance of a UI; any
 dialog is described by a XML-stylish data structure and can be
 executed by the dialog engine.
 
-%description -l pl
-To jest biblioteka interfejsu u¿ytkownika niezale¿na od u¿ytej
-biblioteki widgetów. Podstawowa biblioteka daje abstrakcyjn± instancjê
-interfejsu; ka¿de okienko dialogowe jest opisane przez strukturê
-danych w stylu XML i mo¿e byæ wykonane przez silnik dialogowy.
+%description -l pl.UTF-8
+To jest biblioteka interfejsu uÅ¼ytkownika niezaleÅ¼na od uÅ¼ytej
+biblioteki widgetÃ³w. Podstawowa biblioteka daje abstrakcyjnÄ… instancjÄ™
+interfejsu; kaÅ¼de okienko dialogowe jest opisane przez strukturÄ™
+danych w stylu XML i moÅ¼e byÄ‡ wykonane przez silnik dialogowy.
 
 %package libuta
 Summary:	Janus library - libuta bindings
-Summary(pl):	Biblioteka Janus - interfejs do libuta
+Summary(pl.UTF-8):   Biblioteka Janus - interfejs do libuta
 Group:		Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -42,17 +42,17 @@ executed by the dialog engine.
 
 This package contains bindings for libuta.
 
-%description libuta -l pl
-To jest biblioteka interfejsu u¿ytkownika niezale¿na od u¿ytej
-biblioteki widgetów. Podstawowa biblioteka daje abstrakcyjn± instancjê
-interfejsu; ka¿de okienko dialogowe jest opisane przez strukturê
-danych w stylu XML i mo¿e byæ wykonane przez silnik dialogowy.
+%description libuta -l pl.UTF-8
+To jest biblioteka interfejsu uÅ¼ytkownika niezaleÅ¼na od uÅ¼ytej
+biblioteki widgetÃ³w. Podstawowa biblioteka daje abstrakcyjnÄ… instancjÄ™
+interfejsu; kaÅ¼de okienko dialogowe jest opisane przez strukturÄ™
+danych w stylu XML i moÅ¼e byÄ‡ wykonane przez silnik dialogowy.
 
-Ten pakiet zawiera interfejs do widgetów libuta.
+Ten pakiet zawiera interfejs do widgetÃ³w libuta.
 
 %package gtk
 Summary:	Janus library - GTK+ bindings
-Summary(pl):	Biblioteka Janus - interfejs do GTK+
+Summary(pl.UTF-8):   Biblioteka Janus - interfejs do GTK+
 Group:		Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -64,17 +64,17 @@ executed by the dialog engine.
 
 This package contains bindings for GTK+ library.
 
-%description gtk -l pl
-To jest biblioteka interfejsu u¿ytkownika niezale¿na od u¿ytej
-biblioteki widgetów. Podstawowa biblioteka daje abstrakcyjn± instancjê
-interfejsu; ka¿de okienko dialogowe jest opisane przez strukturê
-danych w stylu XML i mo¿e byæ wykonane przez silnik dialogowy.
+%description gtk -l pl.UTF-8
+To jest biblioteka interfejsu uÅ¼ytkownika niezaleÅ¼na od uÅ¼ytej
+biblioteki widgetÃ³w. Podstawowa biblioteka daje abstrakcyjnÄ… instancjÄ™
+interfejsu; kaÅ¼de okienko dialogowe jest opisane przez strukturÄ™
+danych w stylu XML i moÅ¼e byÄ‡ wykonane przez silnik dialogowy.
 
-Ten pakiet zawiera interfejs do widgetów GTK+.
+Ten pakiet zawiera interfejs do widgetÃ³w GTK+.
 
 %package devel
 Summary:	Header files for janus development
-Summary(pl):	Pliki nag³ówkowe do tworzenia programów z u¿yciem biblioteki Janus
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe do tworzenia programÃ³w z uÅ¼yciem biblioteki Janus
 Group:		Development/Libraries
 Requires:	%{name}-gtk = %{version}-%{release}
 Requires:	%{name}-libuta = %{version}-%{release}
@@ -90,13 +90,13 @@ executed by the dialog engine.
 This package contains the header files needed to develop programs that
 use these janus library.
 
-%description devel -l pl
-Ten pakiet zawiera pliki nag³ówkowe potrzebne przy tworzeniu programów
-z u¿yciem biblioteki Janus.
+%description devel -l pl.UTF-8
+Ten pakiet zawiera pliki nagÅ‚Ã³wkowe potrzebne przy tworzeniu programÃ³w
+z uÅ¼yciem biblioteki Janus.
 
 %package static
 Summary:	Static libraries for janus development
-Summary(pl):	Statyczne biblioteki Janus
+Summary(pl.UTF-8):   Statyczne biblioteki Janus
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -108,7 +108,7 @@ executed by the dialog engine.
 
 This package contains the static Janus libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Ten pakiet zawiera statyczne biblioteki Janus.
 
 %prep
