@@ -1,5 +1,5 @@
 Summary:	Janus library
-Summary(pl.UTF-8):   Biblioteka Janus
+Summary(pl.UTF-8):	Biblioteka Janus
 Name:		janus
 Version:	0.4.4.20020912
 Release:	1
@@ -30,7 +30,7 @@ danych w stylu XML i może być wykonane przez silnik dialogowy.
 
 %package libuta
 Summary:	Janus library - libuta bindings
-Summary(pl.UTF-8):   Biblioteka Janus - interfejs do libuta
+Summary(pl.UTF-8):	Biblioteka Janus - interfejs do libuta
 Group:		Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -52,7 +52,7 @@ Ten pakiet zawiera interfejs do widgetów libuta.
 
 %package gtk
 Summary:	Janus library - GTK+ bindings
-Summary(pl.UTF-8):   Biblioteka Janus - interfejs do GTK+
+Summary(pl.UTF-8):	Biblioteka Janus - interfejs do GTK+
 Group:		Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -74,7 +74,7 @@ Ten pakiet zawiera interfejs do widgetów GTK+.
 
 %package devel
 Summary:	Header files for janus development
-Summary(pl.UTF-8):   Pliki nagłówkowe do tworzenia programów z użyciem biblioteki Janus
+Summary(pl.UTF-8):	Pliki nagłówkowe do tworzenia programów z użyciem biblioteki Janus
 Group:		Development/Libraries
 Requires:	%{name}-gtk = %{version}-%{release}
 Requires:	%{name}-libuta = %{version}-%{release}
@@ -96,7 +96,7 @@ z użyciem biblioteki Janus.
 
 %package static
 Summary:	Static libraries for janus development
-Summary(pl.UTF-8):   Statyczne biblioteki Janus
+Summary(pl.UTF-8):	Statyczne biblioteki Janus
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
